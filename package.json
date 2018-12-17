@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@ionic/core": "4.0.0-beta.18",
-    "capacitor-video-player": "0.0.3-2"
+    "capacitor-video-player": "0.0.3-3"
   },
   "devDependencies": {
     "@stencil/core": "0.16.1",
@@ -29,7 +29,8 @@
     "@types/puppeteer": "1.11.1",
     "jest": "23.6.0",
     "jest-cli": "23.6.0",
-    "puppeteer": "1.8.0"
+    "puppeteer": "1.8.0",
+    "workbox-build": "3.4.1"
   },
   "repository": {
     "type": "git",

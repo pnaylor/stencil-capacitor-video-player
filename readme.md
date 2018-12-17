@@ -9,14 +9,16 @@ The Ionic PWA Capacitor Video Player app, based on the Ionic PWA Toolkit, is mai
 
 To start working with this PWA, got to your browser and enter the following address
 
-'''
+```
 https://pwacapacitorvideoplayertest.firebaseapp.com
-'''
+```
 
 ## View Me
+
 [ionicpwacapacitorvideoplayer](https://pwacapacitorvideoplayertest.firebaseapp.com)
 
 ## To run this Project
+
 ### Clone the project
 
 clone this repo to a new directory:
