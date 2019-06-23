@@ -1,7 +1,7 @@
 {
   "name": "pwacapacitorvideoplayer",
   "private": true,
-  "version": "0.0.3",
+  "version": "1.1.0-beta.1",
   "description": "pwa-capacitor-video-player-test",
   "files": [
     "dist/"
@@ -20,17 +20,22 @@
     "test.watch": "stencil test --spec --e2e --watch"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-rc.0",
-    "capacitor-video-player": "0.0.4-2"
+    "@capacitor/cli": "^1.1.0",
+    "@capacitor/core": "^1.1.0",
+    "@ionic/core": "one",
+    "capacitor-video-player": "latest"
   },
   "devDependencies": {
-    "@stencil/core": "0.16.1",
-    "@types/jest": "23.3.10",
-    "@types/puppeteer": "1.11.1",
-    "jest": "23.6.0",
-    "jest-cli": "23.6.0",
-    "puppeteer": "1.8.0",
-    "workbox-build": "3.4.1"
+    "@stencil/core": "^1.0.7",
+    "@types/jest": "24.0.15",
+    "@types/puppeteer": "1.12.4",
+    "jest": "24.8.0",
+    "jest-cli": "24.8.0",
+    "puppeteer": "1.17.0",
+    "workbox-build": "4.3.1"
+  },
+  "jest": {
+    "preset": "@stencil/core/testing"
   },
   "repository": {
     "type": "git",

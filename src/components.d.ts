@@ -5,31 +5,15 @@
  */
 
 
-import '@stencil/core';
-
-import '@ionic/core';
-import 'ionicons';
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-
   interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
-
   interface AppRoot {}
-  interface AppRootAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'AppHome': Components.AppHome;
-    'AppRoot': Components.AppRoot;
-  }
-
-  interface StencilIntrinsicElements {
-    'app-home': Components.AppHomeAttributes;
-    'app-root': Components.AppRootAttributes;
-  }
 
 
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
@@ -43,24 +27,29 @@ declare global {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
-
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement
-    'app-root': HTMLAppRootElement
-  }
-
-  interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
   }
-
-
-  export namespace JSX {
-    export interface Element {}
-    export interface IntrinsicElements extends StencilIntrinsicElements {
-      [tagName: string]: any;
-    }
-  }
-  export interface HTMLAttributes extends StencilHTMLAttributes {}
-
 }
+
+declare namespace LocalJSX {
+  interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
+
+  interface IntrinsicElements {
+    'app-home': AppHome;
+    'app-root': AppRoot;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+
