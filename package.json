@@ -20,15 +20,15 @@
     "test.watch": "stencil test --spec --e2e --watch"
   },
   "dependencies": {
-    "@capacitor/cli": "^1.1.0",
-    "@capacitor/core": "^1.1.0",
-    "@ionic/core": "one",
+    "@capacitor/cli": "^1.1.1",
+    "@capacitor/core": "^1.1.1",
+    "@ionic/core": "^4.7.1",
     "capacitor-video-player": "latest"
   },
   "devDependencies": {
-    "@stencil/core": "^1.0.7",
-    "@types/jest": "24.0.15",
-    "@types/puppeteer": "1.12.4",
+    "@stencil/core": "^1.2.3",
+    "@types/jest": "24.0.16",
+    "@types/puppeteer": "1.19.0",
     "jest": "24.8.0",
     "jest-cli": "24.8.0",
     "puppeteer": "1.17.0",
