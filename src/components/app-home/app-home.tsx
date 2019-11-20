@@ -36,6 +36,7 @@ export class AppHome {
         </p>
 
         <ion-button onClick={ (event: UIEvent) => this.handleClick(event)}>Test Video Player Plugin</ion-button>
+        <video controls src="assets/user_video.mp4"></video>
       </ion-content>
     ];
   }
