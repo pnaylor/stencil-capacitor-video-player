@@ -1,0 +1,7 @@
+{
+  "appId": "cap.vid.player",
+  "appName": "cap.vid.player",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

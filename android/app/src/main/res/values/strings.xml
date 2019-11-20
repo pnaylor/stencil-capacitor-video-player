@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">cap.vid.player</string>
+    <string name="title_activity_main">cap.vid.player</string>
+    <string name="package_name">cap.vid.player</string>
+    <string name="fileprovider_authority">cap.vid.player.fileprovider</string>
+    <string name="custom_url_scheme">cap.vid.player</string>
+</resources>

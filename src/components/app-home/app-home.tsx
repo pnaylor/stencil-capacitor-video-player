@@ -13,7 +13,7 @@ export class AppHome {
   }
   async testPlugin() { 
     const videoPlayer:any = CapacitorVideoPlayer;
-    const url:string = "https://clips.vorwaerts-gmbh.de/VfE_html5.mp4";
+    const url:string = "assets/user_video.mp4";
     const res:any  = await videoPlayer.play({url:url});
     console.log('result of echo ', res)
      
